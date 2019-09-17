@@ -11,15 +11,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
-const firebase = {
-  apiKey: "AIzaSyD5LG7VvBg9FegezOLOKrBmSeCVB7230Js",
-  authDomain: "relian-den.firebaseapp.com",
-  databaseURL: "https://relian-den.firebaseio.com",
-  projectId: "relian-den",
-  storageBucket: "relian-den.appspot.com",
-  messagingSenderId: "1092306613906",
-  appId: "1:1092306613906:web:a2abcd326fa8ac4a"
-}
+const firebaseConfig = {
+  apiKey: "AIzaSyBo_jz0bcMpfZDausw2wPhdlLkNe9XWvwY",
+  authDomain: "your-company-internal.firebaseapp.com",
+  databaseURL: "https://your-company-internal.firebaseio.com",
+  projectId: "your-company-internal",
+  storageBucket: "your-company-internal.appspot.com",
+  messagingSenderId: "1048669654649",
+  appId: "1:1048669654649:web:65cc95fc51f5e467c8cea8"
+};
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,7 +28,7 @@ const firebase = {
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    AngularFireModule.initializeApp(firebase),
+    AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule
   ],
   providers: [
